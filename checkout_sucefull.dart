@@ -22,7 +22,7 @@ class CheckoutSucefull extends StatelessWidget {
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(20),
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -52,8 +52,8 @@ class CheckoutSucefull extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     Container(
-                      width: 120,
-                      height: 120,
+                      width: 100,
+                      height: 100,
                       child: Image(
                         image: AssetImage('images/checkout.png'),
                       ),
@@ -76,39 +76,6 @@ class CheckoutSucefull extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 10),
-                    Container(
-                      height: 50,
-                      width: MediaQuery.of(context).size.width * .6,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Bijoutery(),
-                            ),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.black,
-                          backgroundColor: Color.fromARGB(255, 246, 233, 112),
-                          padding: EdgeInsets.symmetric(
-                            vertical: 10,
-                            horizontal: 25,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
-                        child: Text(
-                          'Voltar ao início!',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 50),
                     Text(
                       'Alguma dúvida? Entre em contato:',
                       style: TextStyle(
@@ -165,6 +132,35 @@ class CheckoutSucefull extends StatelessWidget {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(height: 15),
+                    Container(
+                      height: 50,
+                      width: MediaQuery.of(context).size.width * .6,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Bijoutery(),
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          foregroundColor: Colors.black,
+                          backgroundColor: Color.fromARGB(255, 246, 233, 112),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        child: Text(
+                          'Voltar ao início!',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
