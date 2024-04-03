@@ -69,7 +69,7 @@ class Checkout extends StatelessWidget {
     });
 
     final accessToken =
-        'APP_USR-6312049864203581-032820-500f4c6349ed0e4089b7e3349b807753-1082234735';
+        'SUA API MERCADO PAGO AQUI!';
     final preferencia = {
       "items": itemNames.asMap().entries.map((entry) {
         int index = entry.key;
