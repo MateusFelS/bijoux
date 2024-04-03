@@ -11,6 +11,7 @@
 
 ## 📋 Pré requisitos para a instalação
 ### Para instalar e usar o aplicativo você precisa ter um celular Android ou iOS.
+### Cadastre no Mercado Pago e adicione sua AcessToken na página "Checkout".
 
 ## 📌 Versão
 ### Está na sua primeira versão, Versão 1.0.
